@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: underline;
+}
+
+body {
+  padding: 0;
+}
+
+nav {
+  text-align: left;
+}
+nav li {
+  list-style-type: none;
+  padding: 10px;
+  padding-left: 0;
+}
+nav a {
+  display: inline;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+nav li a:hover {
+  background-color: #00b0ba;
+}
+
+.highlight {
+background-color: #0fb0b4
+}
+
+footer {
+  text-align: center;
+}
