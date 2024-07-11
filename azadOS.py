@@ -1,20 +1,20 @@
 from flask import Flask, render_template
-
+from flask_htmx import HTMX
 app = Flask(__name__)
-
+htmx = HTMX(app)
 
 # ROUTES
 
-#add logic to always route user to this page on first visit to it after install (make the whole thing into a docker container for easy local/self hosting)
-@app.route("/firstsetup")
-def firstsetup():
-    return render_template('firstsetup.html')
+@app.route("/signup", methods=['GET', 'POST'])
+def signup():
+    # Make the first ever user to visit the site go to this page
+    return render_template('signup.html')
 
 @app.route("/")
 def index():
     return render_template('index.html')
 
-@app.route("/dashboard")
+@app.route("/dashboard", methods=['GET', 'POST'])
 def dashboard():
     return render_template('dashboard.html')
 
@@ -57,7 +57,6 @@ def workouthistory():
 @app.route("/newworkout")
 def newworkout():
     return render_template('newworkout.html')
-    
 
 
 

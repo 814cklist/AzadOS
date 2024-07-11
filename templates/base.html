@@ -4,15 +4,17 @@
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
-    
+    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
     <body>
         <navbar><h1>AzadOS</h1></navbar>
         <hr>
-        
+        <br>
+        <content>
         {% block content %}
         {% endblock %}
-
+        </content>
+        <br>
         <hr>
-
     </body>
 </html>

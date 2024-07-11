@@ -5,6 +5,13 @@
   background-color: #000000;
   color: #ffffff;
   border-color: #ffffff;
+  
+
+}
+
+content {
+  text-align: center;
+  max-width: 80ch;
 }
 
 a {
