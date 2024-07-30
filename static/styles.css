@@ -5,44 +5,35 @@
   background-color: #000000;
   color: #ffffff;
   border-color: #ffffff;
-  
+  text-decoration: none;
+}
 
+body {
+  margin-left: 50px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: aquamarine; /* temporary colour */
+  transition: 0.5s;
+}
+
+.sidebar:hover {
+  width: 150px;
+  /* make this happen so body doesnt get covered by the sidebar TODO:
+  body {
+    margin-left: 150px;
+  } */
 }
 
 content {
   text-align: center;
   max-width: 80ch;
-}
-
-a {
-  text-decoration: underline;
-}
-
-body {
-  padding: 0;
-}
-
-nav {
-  text-align: left;
-}
-nav li {
-  list-style-type: none;
-  padding: 10px;
-  padding-left: 0;
-}
-nav a {
-  display: inline;
-  padding: 10px;
-  text-decoration: none;
-
-}
-
-nav li a:hover {
-  background-color: #00b0ba;
-}
-
-.highlight {
-background-color: #0fb0b4
 }
 
 footer {
